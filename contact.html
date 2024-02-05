@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set, author, and description -->
+    <meta charset="utf-8">
+    <meta name="author" content="Helen Chau">
+    <meta name="description" content="my personal website">
+
+    <!-- Title of the document -->
+    <title>Projects</title>
+
+    <!-- External CSS stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Noto+Sans:ital,wght@0,100;0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+    <!-- Internal CSS styles -->
+    <style>
+    /* General styling for the body */
+    body {
+        background-color: #52658F;
+        margin: 0;
+    }
+
+    /* Container styling with padding and maximum width */
+    .container {
+        padding: 2%;
+        margin: 10% auto 0;
+        max-width: 80%;
+    }
+
+    /* Styling for the contact container */
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 4%;
+    }
+
+    /* Styling for the main heading */
+    h1 {
+        font-family: 'Gloock', sans-serif;
+        color: #F7F5E6;
+        font-size: 6vw;
+    }
+
+    /* Styling for secondary headings */
+    h2 {
+        font-family: 'Gloock', sans-serif;
+        color: #F7F5E6;
+        font-size: 3vw;
+    }
+
+    /* Styling for paragraphs, active links, labels, and form groups */
+    p,
+    a:active,
+    label,
+    .form-group {
+        font-family: 'Noto Sans', sans-serif;
+        color: white;
+        font-size: 1vw;
+    }
+
+    /* Styling for figure captions, table headers, and table data */
+    figcaption,
+    th,
+    td {
+        font-family: 'Noto Sans', sans-serif;
+        color: white;
+        font-size: 1vw;
+    }
+
+    /* Styling for the navigation bar */
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333A56;
+        padding: 1%;
+        text-align: center;
+        z-index: 1000;
+        opacity: 0.8;
+        transition: opacity 0.3s;
+    }
+
+    /* Styling for navigation bar on hover */
+    .navbar:hover {
+        opacity: 1;
+    }
+
+    /* Styling for navigation bar buttons */
+    .navbar-buttons {
+        display: inline-block;
+    }
+
+    .navbar-buttons a {
+        color: #E8E8E8;
+        text-decoration: none;
+        font-family: 'Noto Sans', sans-serif;
+        padding: 5px 20px;
+        margin: 0 5px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .navbar-buttons a:hover {
+        background-color: #52658F;
+    }
+
+    /* Styling for the contact form */
+    .contact-form {
+        background-color: #333A56;
+        padding: 4%;
+        max-width: 50%;
+        margin: 2% auto;
+        z-index: 2;
+    }
+
+    /* Styling for input, textarea, and button elements in the form */
+    input,
+    textarea,
+    button {
+        width: 100%;
+        padding: 2%;
+        box-sizing: border-box;
+        font-size: 1vw;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div class="navbar-buttons">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a href="experience.html">Service</a>
+        </div>
+    </div>
+
+    <!-- Main container for the page content -->
+    <div class="container">
+        <!-- Contact container with information and form -->
+        <div class="contact-container">
+            <div>
+                <!-- Main heading for the contact section -->
+                <h1>Contact Me</h1>
+                <!-- Contact information -->
+                <p>
+                Email: chauh4@uci.edu <br>
+                Phone: xxx-xxx-xxx <br>
+                Github:
+                <!-- Link to GitHub profile -->
+                <a href="https://github.com/bbobateaa" target="_blank" style="color: #ffffff; text-decoration: none;">bbobateaa</a>
+                </p>
+            </div>
+            <!-- Contact form -->
+            <form class="contact-form" action="submit_form.php" method="post">
+                <!-- Secondary heading for the form section -->
+                <h2>
+                    Send a Message
+                </h2>
+                <!-- Form fields -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <textarea id="subject" name="subject" rows="1" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <!-- Submit button for the form -->
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

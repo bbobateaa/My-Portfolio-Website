@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Helen Chau">
+    <meta name="description" content="my personal website">
+
+    <title>Projects</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Noto+Sans:ital,wght@0,100;0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #333A56;
+        }
+
+        /* Styling for the main content container */
+        .container {
+            padding: 2%;
+            margin-top: 10%;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Styling for the secondary content container */
+        .container-2 {
+            padding: 0;
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 3%;
+        }
+
+        /* Styling for the flex container */
+        .container-fluid {
+            padding: 5%;
+            width: 60%;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        h1 {
+            font-family: 'Gloock', sans-serif;
+            color: #F7F5E6;
+            font-size: 5em;
+        }
+
+        h2 {
+            font-family: 'Gloock', sans-serif;
+            color: #333A56;
+            font-size: 4em;
+        }
+
+        h3 {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 400;
+            color: #52658F;
+            font-size: 1.2em;
+        }
+
+        h4 {
+            font-family: 'Gloock', sans-serif;
+            color: #333A56;
+            font-weight: 100;
+            font-size: 2em;
+        }
+
+        p {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 400;
+            color: rgb(255, 255, 255);
+            font-size: 1.2em;
+        }
+
+        /* Styling for the additional information block */
+        .m {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 200;
+            color: #E8E8E8;
+            font-size: 1.2em;
+            margin-right: 10%;
+        }
+
+        /* Styling for the fixed navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #E8E8E8;
+            padding: 1%;
+            text-align: center;
+            z-index: 1000;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        /* Navbar hover effect */
+        .navbar:hover {
+            opacity: 1;
+        }
+
+        /* Styling for the navbar buttons */
+        .navbar-buttons {
+            display: inline-block;
+        }
+
+        .navbar-buttons a {
+            color: #333A56;
+            text-decoration: none;
+            font-family: 'Noto Sans', sans-serif;
+            padding: 5px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        /* Navbar button hover effect */
+        .navbar-buttons a:hover {
+            background-color: #F7F5E6;
+        }
+
+        /* Styling for the text block section */
+        .text-block {
+            background-color: #F7F5E6;
+            color: #333A56;
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 500;
+            height: 100%;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            bottom: 0;
+            left: 0;
+        }
+
+        /* Styling for the "Contact Me" button */
+        .aboutme-button {
+            background-color: #333A56;
+            color: #E8E8E8;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 2%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Fixed navbar at the top -->
+    <div class="navbar">
+        <div class="navbar-buttons">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="experience.html">Service</a>
+        </div>
+    </div>
+
+    <!-- Main content container -->
+    <div class="container">
+        <h1>
+            <br>My Services
+        </h1>
+    </div>
+
+    <!-- Flex container for service sections -->
+    <div class="container-fluid">
+        <div class="service">
+            <p>
+                UI/UX Design
+            </p>
+            <div class="m">
+                - Knowledge of Adobe applications <br>
+                - Ability to prototype <br>
+                - Visual design Skills <br>
+                - Always think of user preferences <br>
+            </div>
+        </div>
+        <div class="service">
+            <p>
+                Software Developer
+            </p>
+            <div class="m">
+                - Ability to write Unittest<br>
+                - Debugging and problem solving<br>
+                - Willing to learn new languages<br>
+                - Understanding of Algorithms, Libraries, and Data Structures<br>
+            </div>
+        </div>
+        <div class="service">
+            <p>
+                Website Design
+            </p>
+            <div class="m">
+                - Proficiency in HTML, CSS, and JavaScript<br>
+                - Taken many courses on web design<br>
+                - Can cater to client's needs and wants<br>
+                - Knowledge of UI design principles<br>
+            </div>
+        </div>
+    </div>
+
+    <!-- Text block section with reasons to hire -->
+    <div class="text-block">
+        <div class="container">
+            <h2>
+                Why hire me for your next project?
+            </h2>
+            <h3>
+                As a dedicated software developer and UI/UX designer,
+                I bring a dynamic blend of technical expertise and creative
+                innovation to every project. Here are a few reasons why I believe
+                I would be a valuable addition to your team: <br>
+            </h3>
+        </div>
+
+        <!-- Secondary content container for detailed reasons -->
+        <div class="container-2">
+            <h4>
+                Striving for Excellence:
+            </h4>
+            <h3>
+                I am genuinely passionate about crafting
+                exceptional digital experiences. <br>
+                From coding robust solutions to
+                designing intuitive user interfaces, I approach every task with
+                enthusiasm and a commitment to excellence. <br><br>
+            </h3>
+            <h4>
+                Adaptability:
+            </h4>
+            <h3>
+                In the fast-evolving world of technology,
+                adaptability is crucial. <br>
+                My ability to quickly
+                grasp new concepts and stay current with industry
+                trends ensures that I can contribute effectively to
+                diverse projects and challenges. <br><br>
+            </h3>
+            <h4>
+                Collaborative Spirit:
+            </h4>
+            <h3>
+                I thrive in collaborative environments.
+                My experience as a lab assistant for courses in which I excelled,
+                collaborating with other lab assistants to achieve shared goals,
+                has significantly honed my communication skills. <br>
+                This hands-on experience taught me the importance of working seamlessly
+                with cross-functional teams. Being part of a collaborative ecosystem
+                not only sharpened my technical abilities but also reinforced my belief
+                in the power of collective intelligence.<br><br>
+            </h3>
+            <h4>
+                Innovative Problem Solver:
+            </h4>
+            <h3>
+                Whether it's debugging code or
+                solving complex design challenges, I approach problem-solving
+                with creativity and a strategic mindset. <br> I enjoy tackling unique
+                problems and finding elegant solutions especially using my experience in writing unittests.<br><br>
+            </h3>
+            <h4>
+                Continuous Learner:
+            </h4>
+            <h3>
+                Technology never stands still, and neither do I.
+                I am committed to continuous learning, staying on top
+                of the latest tools and methodologies. This ensures that
+                I can bring fresh perspectives and innovative solutions to the table.<br><br>
+            </h3>
+            <h4>
+                And...
+            </h4>
+            <h3>
+                By hiring me, you're not just getting a professional;
+                you're gaining a collaborative partner who is driven to contribute to
+                the success of your projects. <br>
+                Let's be on this journey together to create something extraordinary.<br>
+            </h3>
+
+            <!-- "Contact Me" button -->
+            <div class="aboutme-button">
+                <a href="contact.html" target="_blank" style="color: #E8E8E8; text-decoration: none;">Contact Me</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

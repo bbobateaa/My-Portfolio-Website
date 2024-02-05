@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set, author, and description -->
+    <meta charset="utf-8">
+    <meta name="author" content="Helen Chau">
+    <meta name="description" content="My personal website">
+
+    <!-- Title of the document -->
+    <title>Projects</title>
+
+    <!-- External stylesheet and font links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Noto+Sans:ital,wght@0,100;0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+    <!-- Internal CSS styles -->
+    <style>
+        /* Overall styling for the body */
+        body {
+            background-color: #F7F5E6;
+        }
+
+        /* Container for the main content with specified properties */
+        .container-fluid {
+            height: 50%;
+            width: 100%;
+            margin-top: 1%;
+            padding: 2%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Container for text with flex properties */
+        .text-container {
+            padding: 2%;
+            width: 100%;
+            margin-top: 3%;
+            margin-bottom: 2%;
+            margin-left: 2%;
+            margin-right: 2%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        /* Styling for the relative positioning of elements */
+        .position-relative {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Styling for the main heading */
+        h1 {
+            font-family: 'Gloock', sans-serif;
+            color: #333A56;
+            font-size: 4em;
+            margin-left: 10%;
+        }
+
+        /* Styling for secondary headings */
+        h2 {
+            font-family: 'Gloock', sans-serif;
+            color: #F7F5E6;
+            font-size: 2em;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 5%;
+        }
+
+        h3 {
+            font-family: 'Gloock', sans-serif;
+            color: #333A56;
+            font-size: 2em;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 5%;
+        }
+
+        /* Styling for paragraphs and active links */
+        p,
+        a:active {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 400;
+            margin-right: 15%;
+            margin-left: 10%;
+            color: #E8E8E8;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        /* Additional styling for a specific paragraph class */
+        .p2 {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 400;
+            margin-right: 15%;
+            margin-left: 10%;
+            color: #333A56;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        /* Styling for the fixed navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333A56;
+            padding: 1%;
+            text-align: center;
+            z-index: 1000;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        /* Navbar styling on hover */
+        .navbar:hover {
+            opacity: 1;
+        }
+
+        /* Styling for navbar buttons */
+        .navbar-buttons {
+            display: inline-block;
+        }
+
+        .navbar-buttons a {
+            color: #E8E8E8;
+            text-decoration: none;
+            font-family: 'Noto Sans', sans-serif;
+            padding: 5px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        /* Navbar button styling on hover */
+        .navbar-buttons a:hover {
+            background-color: #52658F;
+        }
+
+        /* Styling for text block containers */
+        .text-block {
+            background-color: #333A56;
+            color: #E8E8E8;
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 500;
+            height: 50%;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Styling for horizontal border */
+        .horizontal-border {
+            border-top: 10px solid #52658F;
+            width: 100%;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Styling for different text block containers with varying colors */
+        .text-block2 {
+            background-color: #202331;
+            color: #F7F5E6;
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 500;
+            height: 50%;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .text-block3 {
+            background-color: #E8E8E8;
+            color: #52658F;
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 500;
+            height: 50%;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .text-block4 {
+            background-color: #52658F;
+            color: #202331;
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 500;
+            height: 50%;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Styling for images within the document */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar code which links the users to the other pages of the portfolio-->
+    <div class="navbar">
+        <div class="navbar-buttons">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="experience.html">Service</a>
+        </div>
+    </div>
+
+    <!-- Used a container to format all text -->
+    <div class="container-fluid">
+        <!-- Used another container to position text -->
+        <div class="position-relative">
+            <div class="text-container">
+                <!-- Main heading -->
+                <h1>About Me, <br> Helen Chau.</h1>
+            </div>
+            <div class="text-container">
+                <div class="p2">
+                    <!-- Introduction paragraph -->
+                    Hey there! I'm Helen, a 2nd year full-time student at the University of California, Irvine,
+                    interested in the development of software and implementing UI/UX designs. <br><br> Outside of my studies,
+                    I enjoy crafts and spending time with my dog Comic, which contributes to my inspirations and creativity.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Created a horizontal border for styling and readability -->
+    <div class="horizontal-border">
+        <!-- Text block to group for readability and spacing-->
+        <div class="text-block">
+            <!-- Secondary heading -->
+            <h2>
+                Activities -
+            </h2>
+            <!-- List of activities -->
+            <p>
+                - Women in Computer Science Club at UCI (2022 - current) <br>
+                - In a mentorship program with the Women in Computer Science club at UCI (2023 - current) <br>
+                - In the LA (lab assistant) program at UCI (2024-current) <br>
+                <br>
+            </p>
+        </div>
+    </div>
+
+    <!-- Text block to group for readability and spacing-->
+    <div class="text-block2">
+        <!-- Secondary heading -->
+        <h2>
+            Skills -
+        </h2>
+        <!-- List of skills -->
+        <p>
+            - Coding Languages: Python, Java, SQL, Git, HTML <br>
+            - GitHub <br>
+            - Unittest writing <br>
+            - Understanding of Data Structures, Algorithms, and Object-Oriented Programming <br>
+            - Knowledge of using Eclipse, Tkinter, Git, and PyCharm <br>
+            - Problem-solving and debugging <br> <br>
+        </p>
+    </div>
+
+    <!-- Text block to group for readability and spacing-->
+    <div class="text-block3">
+        <!-- Tertiary heading -->
+        <h3>
+            Education-
+        </h3>
+        <!-- Paragraph with educational information -->
+        <div class="p2">
+            University of California - Irvine <br>
+            B.S. Informatics Computer Science | Expected 2026 <br>
+            GPA: 3.344/ 4.0 <br> <br>
+        </div>
+    </div>
+
+    <!-- Text block to group for readability and spacing-->
+    <div class="text-block4">
+        <!-- Secondary heading -->
+        <h2>
+            Experiences -
+        </h2>
+        <!-- Paragraph with experience details -->
+        <p>
+            Lab Assistant at UCI | 2024-current <br>
+            I helped professors assist students with their assignments and projects in a
+            Computer Science course that I excelled in and received qualification <br> <br>
+        </p>
+    </div>
+</body>
+
+</html>

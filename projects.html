@@ -1,0 +1,463 @@
+<!-- HTML Document Declaration -->
+<!doctype html>
+<html lang="en">
+
+<!-- Author and Contact Information -->
+<!--
+  WRITTEN BY: Helen Chau
+  EMAIL: chauh4@uci.edu
+-->
+
+<head>
+  <!-- Meta Tags for Character Set, Author, and Description -->
+  <meta charset="utf-8">
+  <meta name="author" content="Helen Chau">
+  <meta name="description" content="my personal website">
+
+  <!-- Title of the Page -->
+  <title>Projects</title>
+
+  <!-- External Stylesheets and Fonts -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Noto+Sans:ital,wght@0,100;0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+  <!-- Internal Styles -->
+  <style>
+    /* Body Styling */
+    body {
+      background-color: #333A56;
+    }
+
+    /* Header Container Styling */
+    .head-container {
+      padding: 1%;
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 7%;
+    }
+
+    /* Main Container Styling */
+    .container {
+      padding: 0;
+      width: 100%;
+      margin-left: 10%;
+      margin-right: 10%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    /* Text Container Styling */
+    .text-container {
+      background-color: #E8E8E8;
+      color: #52658F;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 500;
+      height: 50%;
+      width: 100%;
+      margin-top: 4%;
+      padding: 2%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Position Relative Styling */
+    .position-relative {
+      display: flex;
+      align-items: center;
+    }
+
+    /* Heading 1 Styling */
+    h1 {
+      font-family: 'Gloock', sans-serif;
+      color: white;
+      font-size: 5em;
+    }
+
+    /* Heading 2 Styling */
+    h2 {
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 400;
+        color: #F7F5E6;
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    /* Heading 3 Styling */
+    h3 {
+        font-family: 'Gloock', sans-serif;
+        color: #333A56;
+        font-size: 2.5em;
+        margin-top: 2%;
+    }
+
+    /* Table Styling */
+    table {
+      width: 100%;
+      margin-top: 19px;
+      margin-bottom: 20px;
+    }
+
+    /* Paragraph and Link Styling */
+    p {
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 400;
+      color: #52658F;
+      width: 50%;
+      font-size: 1.2em;
+      margin-right: 50px;
+    }
+
+    /* Figure Caption Styling */
+    figcaption {
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 350;
+      color: #202331;
+      font-size: 1.0em;
+      margin-top: 4px;
+      margin-left: 5px;
+    }
+
+    /* Additional Paragraph Styling */
+    .m {
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 200;
+      color: #202331;
+      width: 100%;
+      font-size: 1.2em;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #52658F;
+      padding: 1%;
+      text-align: center;
+      z-index: 1000;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+
+    /* Navbar Hover Styling */
+    .navbar:hover {
+      opacity: 1;
+    }
+
+    /* Navbar Buttons Styling */
+    .navbar-buttons {
+      display: inline-block;
+    }
+
+    /* Navbar Button Links Styling */
+    .navbar-buttons a {
+      color: #F7F5E6;
+      text-decoration: none;
+      font-family: 'Noto Sans', sans-serif;
+      padding: 5px 20px;
+      margin: 0 5px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    /* Navbar Button Hover Styling */
+    .navbar-buttons a:hover {
+      background-color: #6679a0;
+    }
+
+    /* Image Styling */
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* About Me Button Styling */
+    .aboutme-button {
+      background-color: #333A56;
+      color: #E8E8E8;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-bottom: 3%;
+    }
+
+    /* About Me Button 2 Styling */
+    .aboutme-button2 {
+      background-color: #E8E8E8;
+      color: #E8E8E8;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-top: 3%;
+      margin-bottom: 3%;
+    }
+
+    /* Horizontal Border Styling */
+    .horizontal-border {
+      border-top: 10px solid #52658F;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      width: 100%;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<!-- body -->
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="navbar-buttons">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="experience.html">Service</a>
+        </div>
+    </div>
+
+    <!-- Header Container -->
+    <div class="head-container">
+        <h1>
+            My Projects
+        </h1>
+        <h2>
+            <br>
+            All of my works on this page showcase my journey
+            as a growing software developer and dedicated UI/UX designer.
+            Each project represents not just a piece of code but a story of challenges
+            conquered, solutions crafted, and continuous learning. I am excited and committed to pushing my
+            creative boundaries and refining my skills! <br> <br>
+            Join me on this exciting journey through the world of technology and design.
+            Your exploration of these projects will not only demonstrate my technical
+            expertise but also provide insights into the dedication I
+            bring to every aspect of software development and UI/UX design.
+        </h2>
+        <div class="aboutme-button2">
+            <a href="https://github.com/bbobateaa" target="_blank" style="color: #202331; text-decoration: none;">My Github</a>
+        </div>
+    </div>
+
+    <!-- Text Container -->
+    <div class="text-container">
+        
+        <!-- Comic Simulator Discord Bot Project Section -->
+        <div class="position-relative">
+            <div class="container">
+                <h3>
+                    Comic Simulator Discord Bot <br>
+                </h3>
+                <p>
+                    Python, Discord API <br>
+                    August 2023 - Present <br>
+                </p>
+                <div class="m">
+                    <!-- Project Details -->
+                    - Created a discord bot inspired by my dog Comic who is a total drama queen and by Tamagotchi games
+                        where you take care of your digital pet <br> <br>
+                    - Player’s goal is to satisfy Comic’s needs such as hunger and boredom but
+                        his satisfaction bars can go up or down depending on how often and what you feed him. <br> <br>
+                    - Used the discord API to collect user data and generate comic’s automated reactions to user input <br> <br>
+                </div>
+                <div class="aboutme-button">
+                    <a href="https://github.com/bbobateaa/Comic-Simulator-Discord-Bot" target="_blank" style="color: #E8E8E8; text-decoration: none;">Git Repository</a>
+                </div>
+            </div>
+            
+            <!-- Image for Project -->
+            <div class="container">
+                <figure>
+                    <img src="https://cdn.discordapp.com/attachments/1148349444996214874/1198209270836121620/Screen_Shot_2024-01-20_at_2.15.23_AM.png?ex=65be1257&is=65ab9d57&hm=81e04baff1eca3316d498f68a8070154f6d316f291e064558d667d6ba4c2b16c&" alt="Comic Bot" class="img-fluid rounded" width="550" height="600">
+                    <figcaption> Comic's discord bot profile<br> </figcaption>
+                </figure>
+            </div>
+        </div>
+        
+        <!-- Second Image for Project -->
+        <div class="position-relative">
+            <div class="container">
+                <figure>
+                    <img src="https://cdn.discordapp.com/attachments/1148349444996214874/1197838441841446922/Screen_Shot_2024-01-19_at_1.40.42_AM.png?ex=65bcb8fb&is=65aa43fb&hm=bda59ec368907af34700eb1390ef7ecde23d24db7dffce993253049f164f26b1&" alt="Comic Bot" class="img-fluid rounded" width="550" height="600">
+                    <figcaption> Comic responding to what the user feeds him and showing the effects <br> </figcaption>
+                </figure>
+            </div>
+            <div class="container">
+                <h3>
+                    Purpose -<br>
+                </h3>
+                <div class="m">
+                    <!-- Project Purpose -->
+                    - add more fun to discord servers. <br>
+                    - give people the nostalgia of Tamagotchi games. <br>
+                    - show how dramatic shiba inus really are! <br>
+                </div>
+                <h3>
+                    Updates made - <br>
+                </h3>
+                <div class="m">
+                    <!-- Project Updates -->
+                    - added more food options <br>
+                    - fixed bug with mood bar not changing from different types of food fed <br>
+                    - added more behaviors depending on mood <br>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Horizontal Border -->
+        <div class="horizontal-border"> </div>
+
+        <!-- Messaging & File Sorting User Interface System Section -->
+        <div class="position-relative">
+            
+            <!-- Project Details Container -->
+            <div class="container">
+                <h3>
+                    Messaging & File Sorting User Interface System <br>
+                </h3>
+                <p>
+                    Python, Tkinter <br>
+                    Jan 2023 - March 2023 <br>
+                </p>
+                <div class="m">
+                    <!-- Project Description -->
+                    - Created a user interface system that sorts the user’s files and allows users to make accounts and save files to it. <br><br>
+                    - Messages are sent to other users on a GUI connected to a server platform <br><br>
+                    - Wrote unit tests <br><br>
+                    - A quarter-long project for a Python Programming with Software Libraries course at UCI <br> <br>
+                </div>
+                <div class="aboutme-button">
+                    <!-- Link to Git Repository -->
+                    <a href="https://github.com/bbobateaa/Messaging-File-Sorting-User-Interface-System" target="_blank" style="color: #E8E8E8; text-decoration: none;">Git Repository</a>
+                </div>
+            </div>
+            
+            <!-- Images for the Project -->
+            <div class="container">
+                <figure>
+                    <img src="https://cdn.discordapp.com/attachments/1148349444996214874/1198393070836789378/Screen_Shot_2024-01-20_at_2.25.43_PM.png?ex=65bebd85&is=65ac4885&hm=61b25bb1b744af482566b9296933776632b1031342d9e8e59a037dfb92004a0d&" alt="Message GUI" class="img-fluid rounded" width="550" height="600">
+                    <figcaption> The messaging GUI platform that the users can use <br> </figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- File Sorting and Regulation Section -->
+        <div class="position-relative">
+            
+            <!-- Project Details Container -->
+            <div class="container">
+                <figure>
+                    <img src="https://cdn.discordapp.com/attachments/1148349444996214874/1198395104512184420/Screen_Shot_2024-01-20_at_2.33.47_PM.png?ex=65bebf6a&is=65ac4a6a&hm=fd952b07145f2cfaf112ff9f9b735a6379baa6633a71152a671be134232f05fe&" alt="file sorter" class="img-fluid rounded" width="550" height="600">
+                    <figcaption>The program changing the user's username as desired<br> </figcaption>
+                </figure>
+            </div>
+            
+            <!-- Project Purpose and Features Container -->
+            <div class="container">
+                <h3>
+                    Purpose -<br>
+                </h3>
+                <div class="m">
+                    <!-- Project Purpose -->
+                    - regulate, filter and sort through user's files <br>
+                    - create or delete new files <br>
+                    - provide a direct messaging platform <br>
+                </div>
+                <h3>
+                    Features - <br>
+                </h3>
+                <div class="m">
+                    <!-- Project Features -->
+                    - allows user to filter their files with options such as directories only, certain file types such as txt, or by name. <br>
+                    - users are able to create a unique account with a unique password for a saved file. <br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Horizontal Border -->
+        <div class="horizontal-border"> </div>
+
+        <!-- Region, Country, and Continent Data User Interface System Section -->
+        <div class="position-relative">
+
+            <!-- Project Details Container -->
+            <div class="container">
+                <h3>
+                    Region, Country, and Continent Data User Interface System <br>
+                </h3>
+                <p>
+                    Python, SQL, Tkinter <br>
+                    April 2023 - May 2023 <br>
+                </p>
+                <div class="m">
+                    <!-- Project Description -->
+                    - Created a user interface system that allows users to search for a region, country, and continent. <br><br>
+                    - The application takes information from an SQL database and displays it to the user in the GUI.<br><br>
+                    - The user can also edit and change information on the selected options.<br><br>
+                    - A completed project for an Intermediate Programming with Python course at UCI <br> <br>
+                </div>
+                <div class="aboutme-button">
+                    <!-- Link to Git Repository -->
+                    <a href="https://github.com/bbobateaa/Region-Country-and-Continent-Data-User-Interface-System" target="_blank" style="color: #E8E8E8; text-decoration: none;">Git Repository</a>
+                </div>
+            </div>
+
+            <!-- Images for the Project -->
+            <div class="container">
+                <figure>
+                    <img src="https://cdn.discordapp.com/attachments/1148349444996214874/1198399336116146206/Screen_Shot_2024-01-20_at_2.48.12_PM.png?ex=65bec35a&is=65ac4e5a&hm=2d7372d1560f78e79ff7514bbd8bfb155ecbd845ba7689a78c0c811ce893399f&" alt="research engine" class="img-fluid rounded" width="550" height="600">
+                    <figcaption> The database GUI showing results to the user's search<br> </figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- SQL Code and Purpose Section -->
+        <div class="position-relative">
+
+            <!-- Project Details Container -->
+            <div class="container">
+                <figure>
+                    <img src="https://cdn.discordapp.com/attachments/1148349444996214874/1198399335751221248/Screen_Shot_2024-01-20_at_2.50.14_PM.png?ex=65bec35a&is=65ac4e5a&hm=c81bb192ce0ef19a5080491ee180a402ea61df76a8d5ba78c0271cc11788d72f&" alt="SQL code" class="img-fluid rounded" width="550" height="600">
+                    <figcaption> Code snippet of SQL writing that prevents injection attacks<br> </figcaption>
+                </figure>
+            </div>
+
+            <!-- Project Purpose and Features Container -->
+            <div class="container">
+                <h3>
+                    Purpose -<br>
+                </h3>
+                <div class="m">
+                    <!-- Project Purpose -->
+                    - A search engine for region, country, and continents <br>
+                    - Usage of SQL to retrieve data from a database <br>
+                </div>
+                <h3>
+                    Features - <br>
+                </h3>
+                <div class="m">
+                    <!-- Project Features -->
+                    - SQL data is able to be changed by the user <br>
+                    - Information about a region, country, or continent is provided to the user <br>
+                    - Shown in a user-friendly GUI <br>
+                </div>
+            </div>
+        </div>
+    </div>

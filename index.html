@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Helen Chau">
+  <meta name="description" content="my personal website">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Noto+Sans:ital,wght@0,100;0,400;0,700;1,300&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Styling for the body of the webpage */
+    body {
+      background-color: #52658F;
+    }
+
+    /* Styling for the main container */
+    .container {
+      padding: 10%;
+      margin-top: 10%; 
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    /* Styling for the main heading */
+    h1 {
+      font-family: 'Gloock', sans-serif;
+      color: #E8E8E8;
+      font-size: 4em;
+      margin-left: 5%;
+    }
+
+    /* Styling for the figure caption */
+    figcaption {
+      font-family: 'Noto Sans', sans-serif; 
+      font-weight: 300;
+      color: #F7F5E6;
+      font-size: 0.9em;
+      margin-top: 4px;
+      margin-left: 5px;
+    }
+
+    /* Styling for paragraphs and active links */
+    p,
+    a:active {
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 400;
+      color: #F7F5E6;
+      font-size: 1.2em;
+      margin-left: 5%;
+      margin-bottom: 20px;
+    }
+
+    /* Styling for the relative positioning of elements */
+    .position-relative {
+      display: flex;
+      align-items: center;
+    }
+
+    /* Styling for the text container */
+    .text-container {
+      flex: 1;
+      max-width: 60%;
+      margin-top: 5%;
+      margin-bottom: 2%;
+      padding-left: 10%;
+      padding-right: 5%; 
+    }
+
+    /* Styling for images */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Styling for the "Learn More" button */
+    .aboutme-button {
+      background-color: #333A56;
+      color: #E8E8E8;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-left: 5%;
+    }
+
+    /* Styling for the fixed navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333A56;
+      padding: 1%;
+      text-align: center;
+      z-index: 1000;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+
+    /* Navbar hover effect */
+    .navbar:hover {
+      opacity: 1;
+    }
+
+    /* Styling for the navbar buttons */
+    .navbar-buttons {
+      display: inline-block;
+    }
+
+    .navbar-buttons a {
+      color: #E8E8E8;
+      text-decoration: none;
+      font-family: 'Noto Sans', sans-serif;
+      padding: 5px 20px;
+      margin: 0 5px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    /* Navbar button hover effect */
+    .navbar-buttons a:hover {
+      background-color: #52658F;
+    }
+
+    /* Styling for the first text block */
+    .text-block {
+      background-color: #E8E8E8;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 500;
+      height: 25.5%;
+      width: 100%;
+      position: relative;
+      overflow: hidden; 
+    }
+
+    /* Styling for the horizontal border */
+    .horizontal-border {
+      border-top: 10px solid #333A56;
+      width: 100%;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Styling for the second text block */
+    .text-block-2 {
+      background-color: #333A56; 
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 500;
+      height: 100%;
+      width: 100%;
+      position: relative;
+      overflow: hidden; 
+    }
+
+    /* Styling for the text in the second text block */
+    .m {
+      font-family: 'Noto Sans', sans-serif; 
+      font-weight: 400;
+      color: #52658F;
+      font-size: 1.2em;
+      margin-right: 400px;
+      margin-left: 400px;
+    }
+
+    /* Styling for the text in the second text block */
+    .c {
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 400;
+      color: #F7F5E6;
+      font-size: 1.2em;
+      margin-right: 400px;
+      margin-left: 400px;
+    }
+
+    /* Styling for the heading in the second text block */
+    h2 {
+      font-family: 'Gloock', sans-serif;
+      color: #333A56;
+      font-size: 3em;
+      margin-right: 400px;
+      margin-left: 400px;
+      margin-top: 15px;
+    }
+
+    /* Styling for the subheading in the second text block */
+    h3 {
+      font-family: 'Gloock', sans-serif;
+      color: #E8E8E8;
+      font-size: 3em;
+      margin-right: 400px;
+      margin-left: 400px;
+      margin-top: 15px;
+    }
+  </style>
+  <title>A1 Personal Website</title>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="navbar-buttons">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="experience.html">Service</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container-fluid">
+    <!-- Validator Link -->
+    <p>
+      <a href="http://validator.w3.org/check?uri=referer">W3C validator</a>
+    </p>
+    
+    <!-- Introduction Section -->
+    <div class="position-relative">
+      <div class="text-container">
+        <h1>Hi, <br> I am Helen Chau <br> a UI/UX and Software Developer.</h1>
+        <p>An Informatics Computer Science Major based in Los Angeles, California </p>
+        
+        <!-- "Learn More" Button -->
+        <div class="aboutme-button">
+          <a href="about.html" target="_blank" style="color: #E8E8E8; text-decoration: none;">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Horizontal Border -->
+  <div class="horizontal-border">
+    <!-- First Text Block -->
+    <div class="text-block">
+      <h2>What do I do? <br></h2>
+      <div class="m">
+        With a solid two-year foundation from the Donald Bren school of 
+        Computer Science at the University of California-Irvine, 
+        I am skilled in the art of UI/UX design and 
+        meticulous software programming. <br> My commitment to excellence
+        drives me to craft exceptional solutions that align perfectly with your vision. <br> <br>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Text Block -->
+  <div class="text-block-2">
+    <h3>Latest Works</h3>
+    <div class="c">
+      Comic Simulator Bot | 2023-Current <br>
+      Status: Work in progress <br> <br>
+
+      This project is inspired by a Tamagotchi game and my personal dog! 
+      So far, the mood bar and respect level for my dog Comic has been implemented 
+      as well as improved functionality of his hunger bar regularly regulating so 
+      the player is able to be notified of such changes. <br>
+      Future updates include implementing change of profile picture depending on mood
+      and the ability to kick users out of servers as well. <br> <br>
+
+      This project has been written with Python and usage of Discord API. <br> <br>
+      
+      <!-- Image in Figure Element with Caption -->
+      <figure>
+        <img src="https://cdn.discordapp.com/attachments/1148349444996214874/1197838441841446922/Screen_Shot_2024-01-19_at_1.40.42_AM.png?ex=65bcb8fb&is=65aa43fb&hm=bda59ec368907af34700eb1390ef7ecde23d24db7dffce993253049f164f26b1&" alt="Comic Bot" class="img-fluid rounded" width="550" height="600">
+        <figcaption> Comic responding to what the user feeds him and showing the effects <br> <br> <br> </figcaption>
+      </figure>
+    </div>
+  </div>
+</body>
+</html>
